@@ -114,7 +114,7 @@ Training process and final evaluation results would be stored in './saved_models
 
 ## 5. For training a path generator
 This is taken from the [Commonsense-Path-Generator](https://github.com/wangpf3/Commonsense-Path-Generator) repository. 
-
+You can downlaod the data from [here](https://drive.google.com/drive/folders/1D67MdMNe2Dyymzn30gwxpsjeqqsSxKrS?usp=sharing) and put it under learning-generator
 ```bash
 cd learning-generator
 cd data
