@@ -48,12 +48,8 @@ cd commonsense-qa
 ```
 
 ### 1. Download Data
-
-First, you need to download all the necessary data in order to train the model:
-
-```bash
-bash scripts/download.sh
-```
+You can download the data from [here](https://drive.google.com/drive/folders/1D_pLTgwgyEZLOUfnNWK1jNrLP0hhA2e3?usp=sharing).
+Download the 'data' foler and put it under 'commonsense-qa'. 
 
 ### 2. Preprocess
 
@@ -63,23 +59,21 @@ To preprocess the data, use [commonsense-qa/preprocess.py](./commonsense-qa/prep
 ```bash
 python preprocess.py swow --run obqa 
 ```
-See [commonsense-qa/scripts/run_preprocess.sh](commonsense-qa/scripts/scripts/run_preprocess.sh) for a full list of preprocessing all datasets and knowledge graphs. 
+See [commonsense-qa/scripts/run_preprocess.sh](commonsense-qa/scripts/run_preprocess.sh) for a full list of preprocessing all datasets and knowledge graphs. 
 
 #### 2.2. Using the path generator to connect question-answer entities. This is for RN model or any model that used the PathGenerator Model [(Wang et al., 2020)](https://aclanthology.org/2020.findings-emnlp.369.pdf). 
 
 
 Path generator can generate a path embedding to connect each question-answer concept pair. Details of training a path generator is introduced later in Step 5. 
-The processed path embeddings are stored in './commonsense-qa/saved_models/pretrain_generator', including:   
+The processed path embeddings are stored in './commonsense-qa/saved_models/pretrain_generator'[download](https://drive.google.com/drive/folders/1KzsjwCSTsULQlnYMhWpH807VvgN0llB6?usp=sharing), including:   
 ```bash
 ├── csqa
-│   ├── path_embedding_cpnet7rel.pickle
 │   ├── path_embedding_cpnet.pickle
 │   └── path_embedding_swow.pickle
 ├── mcscript
 │   ├── path_embedding_cpnet.pickle
 │   └── path_embedding_swow.pickle
 └── obqa
-    ├── path_embedding_cpnet7rel.pickle
     ├── path_embedding_cpnet.pickle
     └── path_embedding_swow.pickle
 ```
@@ -90,6 +84,10 @@ Alternatively, you can generate them with:
 Note: 
 1. You need to train a path generator using guidelines in step 5 before running the above command. 
 2. You need to modify ./config/path_generate.config to specify the dataset and gpu device. 
+
+#### 2.3. TransE embeddings 
+We used TransE to train a KG and use the relational embedding matrix for the RN model. 
+You can download the trained 'transe_embeddings' from [here](https://drive.google.com/drive/folders/1NWgy_VvnXmHrhQKqy_hfL9BM6IKr89wb?usp=sharing) and put it under the 'commonsense-qa' folder
 
 
 ### 3. Commonsense QA model training
@@ -112,6 +110,7 @@ bash ./scripts/run_main.sh config/obqa.config swow rn
 ```
 
 Training process and final evaluation results would be stored in './saved_models/'
+
 
 ## 5. For training a path generator
 This is taken from the [Commonsense-Path-Generator](https://github.com/wangpf3/Commonsense-Path-Generator) repository. 
@@ -154,11 +153,7 @@ Then you can start to train the path generator by running
 
 The checkpoint of the path generator would be stored in './checkpoints/model.ckpt'.
 Move it to '../commonsense-qa/saved_models/pretrain_generator'.
-So far, we are done with training the generator.
-
-Alternatively, you can also download our well-trained path generator checkpoints:
-- [cpnet17rel]()
-- [swow]()
+So far, we are done with training the generator. After this, you can use calc_path_embedding.py to calculate path embeddings for a specified dataset.
 
   
 ## Citation
