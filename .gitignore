@@ -1,4 +1,5 @@
 commonsense-qa/data/
+learning-generator/data/
 commonsense-qa/data/transe/glove.transe.sgd.ent.npy
 commonsense-qa/data/swow/conceptnet.en.pruned.graph
 commonsense-qa/data/swow/conceptnet.en.unpruned.graph
