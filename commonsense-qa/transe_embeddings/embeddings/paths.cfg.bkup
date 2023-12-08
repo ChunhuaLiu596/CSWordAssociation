@@ -1,0 +1,212 @@
+[paths]
+glove = ./glove/glove.6B.100d.txt
+glove_vec_npy = ./glove/glove_vec.npy
+glove_vocab = ./glove/glove_vocab.txt
+
+[paths_cpnet]
+triple_string_cpnet_json = ../triple_string/tp_str_corpus.json
+concept_embeddings = concept_embeddings.vec
+relation_embeddings = relation_embeddings.vec
+concept_2_freq = concept.freq
+relation_2_freq = relation.freq
+concept_vec_npy = concept.npy
+relation_vec_npy = relation.npy
+concept_vocab = ./openke_data/cpnet/concept.txt
+relation_vocab = ./openke_data/cpnet/relation.txt
+conceptnet_en = ../data/cpnet/conceptnet-assertions-5.6.0.csv.en
+openie_fodler = ./openke_data/cpnet/
+glove = ./glove/glove.6B.100d.txt
+concept_vec_npy_glove = ./openke_data/cpnet/embs/concept_glove
+relation_vec_npy_glove = ./openke_data/cpnet/embs/relation_glove
+concept_vocab_glove = ./openke_data/cpnet/embs/concept_glove
+relation_vocab_glove = ./openke_data/cpnet/embs/relation_glove
+use_pretrain_rel_emb =  True
+transe_res = openke_data/cpnet/embs/glove_initialized/glove.transe.SGD.vec.json
+concept_vec_npy_transe = openke_data/cpnet/embs/glove_initialized/glove.transe.sgd.ent.npy
+relation_vec_npy_transe = openke_data/cpnet/embs/glove_initialized/glove.transe.sgd.rel.npy
+
+[paths_cpnet_swow]
+swow_folder=./openke_data/cpnet_swow/
+concept_vocab = ./openke_data/cpnet_swow/concept.txt
+relation_vocab = ./openke_data/cpnet_swow/relation.txt
+concept_vec_npy_glove = ./openke_data/cpnet_swow/embs/concept_glove
+concept_vocab_glove = ./openke_data/cpnet_swow/embs/concept_glove
+relation_vec_npy_glove = ./openke_data/cpnet_swow/embs/relation_glove
+relation_vocab_glove = ./openke_data/cpnet_swow/embs/relation_glove
+use_pretrain_rel_emb =  True
+transe_res = ./openke_data/cpnet_swow/embs/glove_initialized/glove.transe.SGD.vec.json
+concept_vec_npy_transe = ./openke_data/cpnet_swow/embs/glove_initialized/glove.transe.sgd.ent.npy
+relation_vec_npy_transe = ./openke_data/cpnet_swow/embs/glove_initialized/glove.transe.sgd.rel.npy
+
+[paths_swow_2relations]
+swow_folder=./openke_data/swow/2relations/
+concept_vocab = ./openke_data/swow/2relations/concept.txt
+relation_vocab = ./openke_data/swow/2relations/relation.txt
+concept_vec_npy_glove = ./openke_data/swow/2relations/embs/concept_glove
+concept_vocab_glove = ./openke_data/swow/2relations/embs/concept_glove
+relation_vec_npy_glove = ./openke_data/swow/2relations/embs/relation_glove
+relation_vocab_glove = ./openke_data/swow/2relations/embs/relation_glove
+use_pretrain_rel_emb = True 
+transe_res = ./openke_data/swow/2relations/embs/glove_initialized/glove.transe.SGD.vec.json
+concept_vec_npy_transe = ./openke_data/swow/2relations/embs/glove_initialized/glove.transe.sgd.ent.npy
+relation_vec_npy_transe = ./openke_data/swow/2relations/embs/glove_initialized/glove.transe.sgd.rel.npy
+
+[paths_swow_19relations]
+swow_folder=./openke_data/swow/19relations/
+concept_vocab = ./openke_data/swow/19relations/concept.txt
+relation_vocab = ./openke_data/swow/19relations/relation.txt
+concept_vec_npy_glove = ./openke_data/swow/19relations/embs/concept_glove
+concept_vocab_glove = ./openke_data/swow/19relations/embs/concept_glove
+relation_vec_npy_glove = ./openke_data/swow/19relations/embs/relation_glove
+relation_vocab_glove = ./openke_data/swow/19relations/embs/relation_glove
+use_pretrain_rel_emb = True 
+transe_res = ./openke_data/swow/19relations/embs/glove_initialized/glove.transe.SGD.vec.json
+concept_vec_npy_transe = ./openke_data/swow/19relations/embs/glove_initialized/glove.transe.sgd.ent.npy
+relation_vec_npy_transe = ./openke_data/swow/19relations/embs/glove_initialized/glove.transe.sgd.rel.npy
+
+[paths_swow_2relationsAugmented]
+swow_folder=./openke_data/swow/2relationsAugmented/
+triples_output = ../data/swow/2relationsAugmented/swow_2relationsAugmented.en.csv
+concept_vocab = ../data/swow/2relationsAugmented/concept.txt
+relation_vocab = ../data/swow/2relationsAugmented/relation.txt
+use_pretrain_rel_emb = True 
+concept_vec_npy_cpnet = ./openke_data/swow/2relationsAugmented/embs/concept_cpnet.ent.npy
+relation_vec_npy_cpnet = ./openke_data/swow/2relationsAugmented/embs/relation_cpnet.rel.npy
+train2id_output = ../data/swow/2relationsAugmented/train2id.txt
+triples_input = ../data/swow/2relations/swow_2relations.en.csv
+concept_vec_npy_glove = ./openke_data/swow/2relationsAugmented/embs/concept_glove
+concept_vocab_glove = ./openke_data/swow/2relationsAugmented/embs/concept_glove
+relation_vec_npy_glove = ./openke_data/swow/2relationsAugmented/embs/relation_glove
+relation_vocab_glove = ./openke_data/swow/2relationsAugmented/embs/relation_glove
+transe_res = ./openke_data/swow/2relationsAugmented/embs/glove_initialized/glove.transe.SGD.vec.json
+concept_vec_npy_transe = ./openke_data/swow/2relationsAugmented/embs/glove_initialized/glove.transe.sgd.ent.npy
+relation_vec_npy_transe = ./openke_data/swow/2relationsAugmented/embs/glove_initialized/glove.transe.sgd.rel.npy
+
+
+[paths_swow_19relationsAugmented]
+swow_folder=./openke_data/swow/19relationsAugmented/
+triples_output = ../data/swow/19relationsAugmented/swow_19relationsAugmented.en.csv
+concept_vocab = ../data/swow/19relationsAugmented/concept.txt
+relation_vocab = ../data/swow/19relationsAugmented/relation.txt
+use_pretrain_rel_emb = True 
+concept_vec_npy_cpnet = ./openke_data/swow/19relationsAugmented/embs/concept_cpnet.ent.npy
+relation_vec_npy_cpnet = ./openke_data/swow/19relationsAugmented/embs/relation_cpnet.rel.npy
+train2id_output = ../data/swow/19relationsAugmented/train2id.txt
+triples_input = ../data/swow/19relations/swow_19relations.en.csv
+concept_vec_npy_glove = ./openke_data/swow/19relationsAugmented/embs/concept_glove
+concept_vocab_glove = ./openke_data/swow/19relationsAugmented/embs/concept_glove
+relation_vec_npy_glove = ./openke_data/swow/19relationsAugmented/embs/relation_glove
+relation_vocab_glove = ./openke_data/swow/19relationsAugmented/embs/relation_glove
+transe_res = ./openke_data/swow/19relationsAugmented/embs/glove_initialized/glove.transe.SGD.vec.json
+concept_vec_npy_transe = ./openke_data/swow/19relationsAugmented/embs/glove_initialized/glove.transe.sgd.ent.npy
+relation_vec_npy_transe = ./openke_data/swow/19relationsAugmented/embs/glove_initialized/glove.transe.sgd.rel.npy
+
+
+[paths_swow_2rel_freq1]
+swow_folder=./openke_data/swow/2rel_freq1/
+concept_vocab = ../data/swow/2rel_freq1/concept.txt
+relation_vocab = ../data/swow/2rel_freq1/relation.txt
+concept_vec_npy_glove = ./openke_data/swow/2rel_freq1/embs/concept_glove
+concept_vocab_glove = ./openke_data/swow/2rel_freq1/embs/concept_glove
+relation_vec_npy_glove = ./openke_data/swow/2rel_freq1/embs/relation_glove
+relation_vocab_glove = ./openke_data/swow/2rel_freq1/embs/relation_glove
+use_pretrain_rel_emb = True 
+transe_res = ./openke_data/swow/2rel_freq1/embs/glove_initialized/glove.transe.SGD.vec.json
+concept_vec_npy_transe = ./openke_data/swow/2rel_freq1/embs/glove_initialized/glove.transe.sgd.ent.npy
+relation_vec_npy_transe = ./openke_data/swow/2rel_freq1/embs/glove_initialized/glove.transe.sgd.rel.npy
+
+
+[paths_swow_2rel_freq2]
+swow_folder=./openke_data/swow/2rel_freq2/
+concept_vocab = ../data/swow/2rel_freq2/concept.txt
+relation_vocab = ../data/swow/2rel_freq2/relation.txt
+concept_vec_npy_glove = ./openke_data/swow/2rel_freq2/embs/concept_glove
+concept_vocab_glove = ./openke_data/swow/2rel_freq2/embs/concept_glove
+relation_vec_npy_glove = ./openke_data/swow/2rel_freq2/embs/relation_glove
+relation_vocab_glove = ./openke_data/swow/2rel_freq2/embs/relation_glove
+use_pretrain_rel_emb = True 
+transe_res = ./openke_data/swow/2rel_freq2/embs/glove_initialized/glove.transe.SGD.vec.json
+concept_vec_npy_transe = ./openke_data/swow/2rel_freq2/embs/glove_initialized/glove.transe.sgd.ent.npy
+relation_vec_npy_transe = ./openke_data/swow/2rel_freq2/embs/glove_initialized/glove.transe.sgd.rel.npy
+
+[paths_swow_3rel_freq2]
+swow_folder=./openke_data/swow/3rel_freq2/
+concept_vocab = ../data/swow/3rel_freq2/concept.txt
+relation_vocab = ../data/swow/3rel_freq2/relation.txt
+concept_vec_npy_glove = ./openke_data/swow/3rel_freq2/embs/concept_glove
+concept_vocab_glove = ./openke_data/swow/3rel_freq2/embs/concept_glove
+relation_vec_npy_glove = ./openke_data/swow/3rel_freq2/embs/relation_glove
+relation_vocab_glove = ./openke_data/swow/3rel_freq2/embs/relation_glove
+use_pretrain_rel_emb = True 
+transe_res = ./openke_data/swow/3rel_freq2/embs/glove_initialized/glove.transe.SGD.vec.json
+concept_vec_npy_transe = ./openke_data/swow/3rel_freq2/embs/glove_initialized/glove.transe.sgd.ent.npy
+relation_vec_npy_transe = ./openke_data/swow/3rel_freq2/embs/glove_initialized/glove.transe.sgd.rel.npy
+
+
+[paths_swow_3rel_freq1]
+swow_folder=./openke_data/swow/3rel_freq1/
+concept_vocab = ../data/swow/3rel_freq1/concept.txt
+relation_vocab = ../data/swow/3rel_freq1/relation.txt
+concept_vec_npy_glove = ./openke_data/swow/3rel_freq1/embs/concept_glove
+concept_vocab_glove = ./openke_data/swow/3rel_freq1/embs/concept_glove
+relation_vec_npy_glove = ./openke_data/swow/3rel_freq1/embs/relation_glove
+relation_vocab_glove = ./openke_data/swow/3rel_freq1/embs/relation_glove
+use_pretrain_rel_emb = True 
+transe_res = ./openke_data/swow/3rel_freq1/embs/glove_initialized/glove.transe.SGD.vec.json
+concept_vec_npy_transe = ./openke_data/swow/3rel_freq1/embs/glove_initialized/glove.transe.sgd.ent.npy
+relation_vec_npy_transe = ./openke_data/swow/3rel_freq1/embs/glove_initialized/glove.transe.sgd.rel.npy
+
+
+[paths_swow_3rel_freq1_cpnet]
+swow_folder=./openke_data/swow/3rel_freq1_cpnet/
+concept_vocab = ../data/swow/3rel_freq1_cpnet/concept.txt
+relation_vocab = ../data/swow/3rel_freq1_cpnet/relation.txt
+concept_vec_npy_glove = ./openke_data/swow/3rel_freq1_cpnet/embs/concept_glove
+concept_vocab_glove = ./openke_data/swow/3rel_freq1_cpnet/embs/concept_glove
+relation_vec_npy_glove = ./openke_data/swow/3rel_freq1_cpnet/embs/relation_glove
+relation_vocab_glove = ./openke_data/swow/3rel_freq1_cpnet/embs/relation_glove
+use_pretrain_rel_emb = True 
+transe_res = ./openke_data/swow/3rel_freq1_cpnet/embs/glove_initialized/glove.transe.SGD.vec.json
+concept_vec_npy_transe = ./openke_data/swow/3rel_freq1_cpnet/embs/glove_initialized/glove.transe.sgd.ent.npy
+relation_vec_npy_transe = ./openke_data/swow/3rel_freq1_cpnet/embs/glove_initialized/glove.transe.sgd.rel.npy
+
+[paths_swow_3rel_freq2_cpnet]
+swow_folder=./openke_data/swow/3rel_freq2_cpnet/
+concept_vocab = ../data/swow/3rel_freq2_cpnet/concept.txt
+relation_vocab = ../data/swow/3rel_freq2_cpnet/relation.txt
+concept_vec_npy_glove = ./openke_data/swow/3rel_freq2_cpnet/embs/concept_glove
+concept_vocab_glove = ./openke_data/swow/3rel_freq2_cpnet/embs/concept_glove
+relation_vec_npy_glove = ./openke_data/swow/3rel_freq2_cpnet/embs/relation_glove
+relation_vocab_glove = ./openke_data/swow/3rel_freq2_cpnet/embs/relation_glove
+use_pretrain_rel_emb = True 
+transe_res = ./openke_data/swow/3rel_freq2_cpnet/embs/glove_initialized/glove.transe.SGD.vec.json
+concept_vec_npy_transe = ./openke_data/swow/3rel_freq2_cpnet/embs/glove_initialized/glove.transe.sgd.ent.npy
+relation_vec_npy_transe = ./openke_data/swow/3rel_freq2_cpnet/embs/glove_initialized/glove.transe.sgd.rel.npy
+
+
+[paths_swow_2rel_freq2_cpnet]
+swow_folder=./openke_data/swow/2rel_freq2_cpnet/
+concept_vocab = ../data/swow/2rel_freq2_cpnet/concept.txt
+relation_vocab = ../data/swow/2rel_freq2_cpnet/relation.txt
+concept_vec_npy_glove = ./openke_data/swow/2rel_freq2_cpnet/embs/concept_glove
+concept_vocab_glove = ./openke_data/swow/2rel_freq2_cpnet/embs/concept_glove
+relation_vec_npy_glove = ./openke_data/swow/2rel_freq2_cpnet/embs/relation_glove
+relation_vocab_glove = ./openke_data/swow/2rel_freq2_cpnet/embs/relation_glove
+use_pretrain_rel_emb = True 
+transe_res = ./openke_data/swow/2rel_freq2_cpnet/embs/glove_initialized/glove.transe.SGD.vec.json
+concept_vec_npy_transe = ./openke_data/swow/2rel_freq2_cpnet/embs/glove_initialized/glove.transe.sgd.ent.npy
+relation_vec_npy_transe = ./openke_data/swow/2rel_freq2_cpnet/embs/glove_initialized/glove.transe.sgd.rel.npy
+
+
+[paths_swow_2rel_freq1_cpnet]
+swow_folder=./openke_data/swow/2rel_freq1_cpnet/
+concept_vocab = ../data/swow/2rel_freq1_cpnet/concept.txt
+relation_vocab = ../data/swow/2rel_freq1_cpnet/relation.txt
+concept_vec_npy_glove = ./openke_data/swow/2rel_freq1_cpnet/embs/concept_glove
+concept_vocab_glove = ./openke_data/swow/2rel_freq1_cpnet/embs/concept_glove
+relation_vec_npy_glove = ./openke_data/swow/2rel_freq1_cpnet/embs/relation_glove
+relation_vocab_glove = ./openke_data/swow/2rel_freq1_cpnet/embs/relation_glove
+use_pretrain_rel_emb = True 
+transe_res = ./openke_data/swow/2rel_freq1_cpnet/embs/glove_initialized/glove.transe.SGD.vec.json
+concept_vec_npy_transe = ./openke_data/swow/2rel_freq1_cpnet/embs/glove_initialized/glove.transe.sgd.ent.npy
+relation_vec_npy_transe = ./openke_data/swow/2rel_freq1_cpnet/embs/glove_initialized/glove.transe.sgd.rel.npy
