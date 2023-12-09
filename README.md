@@ -2,7 +2,7 @@
 
 This is a Pytorch implementation for our CoNLL 2021 paper: Commonsense Knowledge in Word Associations and ConceptNet [[pdf](https://aclanthology.org/2021.conll-1.38.pdf)]
 
-This paper compares how commonsense knowledge encoded in commonsense knowledge graph **ConceptNet** different a large-scale word association network (**SWOW**, the Small World of Words; [De Deyne., (2019)](https://link.springer.com/article/10.3758/s13428-018-1115-7)).
+This paper compares how commonsense knowledge encoded in commonsense knowledge graph **ConceptNet** different a large-scale word association network (**SWOW**, the Small World of Words; [De Deyne et al., (2019)](https://link.springer.com/article/10.3758/s13428-018-1115-7)).
 
 Code folders:
 
