@@ -1,5 +1,8 @@
 commonsense-qa/data/
 learning-generator/data/
+mcscript-coverage/data/
+mcscript-coverage/log/
+mcscript-coverage/output/
 commonsense-qa/data/transe/glove.transe.sgd.ent.npy
 commonsense-qa/data/swow/conceptnet.en.pruned.graph
 commonsense-qa/data/swow/conceptnet.en.unpruned.graph
